@@ -1,0 +1,28 @@
+{
+  "template": "https://github.com/martokk/cookiecutter_workflow_manager",
+  "commit": "6b7f9eb0856049a6cb8021ce94dc99be876d656f",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "folder_structure_sync",
+      "project_description": "Sync the folder folder structure between folders.",
+      "organization": "v3services",
+      "license": "MIT",
+      "_all_python_minor_version": [
+        10
+      ],
+      "minimal_python_version": "3.10",
+      "github_name": "martokk",
+      "email": "25113632+martokk@users.noreply.github.com",
+      "version": "0.0.1",
+      "line_length": "100",
+      "create_example_template": "none",
+      "create_dockerfile_template": "no",
+      "_copy_without_render": [
+        "poetry.lock"
+      ],
+      "_template": "https://github.com/martokk/cookiecutter_workflow_manager"
+    }
+  },
+  "directory": null
+}
