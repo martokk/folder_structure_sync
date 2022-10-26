@@ -3,18 +3,9 @@
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[workflow_manager]
-app_name = "Folder Structure Sync"
-statusbar_text = "App designed by v3services"
-about_text = "App designed by v3services."
-pos_x = 0
-pos_y = 0
-height = 1200
-width = 800
-
 [tool.poetry]
 name = "folder_structure_sync"
-version = "0.0.1"
+version = "0.1.0"
 description = "Sync the folder folder structure between folders."
 readme = "README.md"
 authors = ["v3services <25113632+martokk@users.noreply.github.com>"]
