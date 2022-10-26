@@ -155,7 +155,7 @@ build-pyqt5-ui: ## Build PyQt5 QtDesigner UI File
 
 .PHONY: build-desktop-file
 build-desktop-file: ## Build .desktop File
-	printf "[Desktop Entry]\nName=quick_capture\nIcon=$(PYTHONPATH)/$(IMAGE)/resources/images/icon.png\nType=Application\nExec=$(PYTHONPATH)/dist_linux/$(IMAGE)\nTerminal=false" > "$(PYTHONPATH)/dist_linux/$(IMAGE).desktop"
+	printf "[Desktop Entry]\nName=quick_capture\nIcon=$(PYTHONPATH)/assets/images/icon.png\nType=Application\nExec=$(PYTHONPATH)/dist_linux/$(IMAGE)\nTerminal=false" > "$(PYTHONPATH)/dist_linux/$(IMAGE).desktop"
 
 
 
@@ -173,8 +173,8 @@ install-linux-executable: ## Installs binary in ~/bin
 
 .PHONY: install-linux-user-config
 install-linux-user-config: ## Installs config in ~/.vapps
-	mkdir -p $(HOME)/.vapps
-	cp -n $(PYTHONPATH)/$(IMAGE)/.vapps/$(IMAGE).yaml $(HOME)/.vapps/$(IMAGE).yaml
+	test -f $(PYTHONPATH)/$(IMAGE)/.vapps/$(IMAGE).yaml && mkdir -p $(HOME)/.vapps || echo ""
+	test -f $(PYTHONPATH)/$(IMAGE)/.vapps/$(IMAGE).yaml && cp -n $(PYTHONPATH)/$(IMAGE)/.vapps/$(IMAGE).yaml $(HOME)/.vapps/$(IMAGE).yaml || echo ""
 
 .PHONY: install-desktop-file
 install-desktop-file: build-desktop-file ## Install .desktop shortcut for user
