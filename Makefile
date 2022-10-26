@@ -155,7 +155,7 @@ build-pyqt5-ui: ## Build PyQt5 QtDesigner UI File
 
 .PHONY: build-desktop-file
 build-desktop-file: ## Build .desktop File
-	printf "[Desktop Entry]\nName=quick_capture\nIcon=$(PYTHONPATH)/assets/images/icon.png\nType=Application\nExec=$(PYTHONPATH)/dist_linux/$(IMAGE)\nTerminal=false" > "$(PYTHONPATH)/dist_linux/$(IMAGE).desktop"
+	printf "[Desktop Entry]\nName=$(IMAGE)\nIcon=$(PYTHONPATH)/assets/images/icon.png\nType=Application\nExec=$(PYTHONPATH)/dist_linux/$(IMAGE)\nTerminal=false" > "$(PYTHONPATH)/dist_linux/$(IMAGE).desktop"
 
 
 
