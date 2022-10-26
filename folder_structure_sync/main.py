@@ -7,6 +7,7 @@ from pathlib import Path
 
 from loguru import logger
 from PyQt5.QtWidgets import QApplication
+from workflow_manager import get_version
 from workflow_manager.action_script import ActionScript
 from workflow_manager.config import Config
 from workflow_manager.workflow_manager import WorkflowManager
@@ -16,7 +17,7 @@ from folder_structure_sync.pyqt5_ui import Ui_MainWindow
 logger.add("log.log", level="TRACE", rotation="50 MB")
 
 CONFIG = Config(
-    app_name="Folder Structure Sync",
+    app_name=f"Folder Structure Sync v{get_version()}",
     statusbar_text="App designed by v3services",
     about_text="App designed by v3services.",
     pos_x=0,
