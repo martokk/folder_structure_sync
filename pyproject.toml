@@ -100,6 +100,8 @@ profile = "black"
 multi_line_output = 3
 indent = 4
 color_output = true
+skip = ["pyqt5_ui.py", "resources_rc.py"]
+skip_glob = [".venv/*"]
 
 [tool.mypy]
 # https://mypy.readthedocs.io/en/latest/config_file.html#using-a-pyproject-toml-file
