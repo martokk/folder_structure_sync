@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 # Form implementation generated from reading ui file '/media/martokk/FILES/dev/apps/python/folder_structure_sync/assets/ui/pyqt5_ui.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
@@ -11,7 +9,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class Ui_MainWindow:
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(609, 607)
@@ -29,11 +27,15 @@ class Ui_MainWindow(object):
         self.header.setObjectName("header")
         self.headerHorizontalLayout = QtWidgets.QHBoxLayout()
         self.headerHorizontalLayout.setObjectName("headerHorizontalLayout")
-        spacerItem = QtWidgets.QSpacerItem(40, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(
+            40, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.headerHorizontalLayout.addItem(spacerItem)
         self.header_icon = QtWidgets.QLabel(self.centralwidget)
         self.header_icon.setEnabled(True)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.header_icon.sizePolicy().hasHeightForWidth())
@@ -53,7 +55,9 @@ class Ui_MainWindow(object):
         self.header_app_name.setFont(font)
         self.header_app_name.setObjectName("header_app_name")
         self.headerHorizontalLayout.addWidget(self.header_app_name)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            40, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.headerHorizontalLayout.addItem(spacerItem1)
         self.header.addLayout(self.headerHorizontalLayout)
         self.verticalLayout_2.addLayout(self.header)
@@ -90,18 +94,24 @@ class Ui_MainWindow(object):
         self.destination_browse_button.setIcon(icon)
         self.destination_browse_button.setObjectName("destination_browse_button")
         self.gridLayout.addWidget(self.destination_browse_button, 1, 3, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.gridLayout.addItem(spacerItem2, 3, 2, 1, 1)
         self.verticalLayout_4.addLayout(self.gridLayout)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.groupBox = QtWidgets.QGroupBox(self.script)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.groupBox.sizePolicy().hasHeightForWidth())
         self.groupBox.setSizePolicy(sizePolicy)
-        self.groupBox.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.groupBox.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop
+        )
         self.groupBox.setFlat(False)
         self.groupBox.setObjectName("groupBox")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.groupBox)
@@ -109,30 +119,44 @@ class Ui_MainWindow(object):
         self.scan_recursively_checkbox = QtWidgets.QCheckBox(self.groupBox)
         self.scan_recursively_checkbox.setObjectName("scan_recursively_checkbox")
         self.verticalLayout.addWidget(self.scan_recursively_checkbox)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem3 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.verticalLayout.addItem(spacerItem3)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem4 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout.addItem(spacerItem4)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem5 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding
+        )
         self.verticalLayout.addItem(spacerItem5)
         self.horizontalLayout.addWidget(self.groupBox)
         self.ignoreFoldersGroupBox = QtWidgets.QGroupBox(self.script)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.ignoreFoldersGroupBox.sizePolicy().hasHeightForWidth())
         self.ignoreFoldersGroupBox.setSizePolicy(sizePolicy)
-        self.ignoreFoldersGroupBox.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.ignoreFoldersGroupBox.setAlignment(
+            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop
+        )
         self.ignoreFoldersGroupBox.setObjectName("ignoreFoldersGroupBox")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.ignoreFoldersGroupBox)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout()
         self.verticalLayout_6.setObjectName("verticalLayout_6")
         self.folder_to_ignore_list_widget = QtWidgets.QListWidget(self.ignoreFoldersGroupBox)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.folder_to_ignore_list_widget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.folder_to_ignore_list_widget.sizePolicy().hasHeightForWidth()
+        )
         self.folder_to_ignore_list_widget.setSizePolicy(sizePolicy)
         self.folder_to_ignore_list_widget.setMaximumSize(QtCore.QSize(16777215, 99))
         self.folder_to_ignore_list_widget.setObjectName("folder_to_ignore_list_widget")
@@ -155,7 +179,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.label_2)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem6 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
+        )
         self.horizontalLayout_4.addItem(spacerItem6)
         self.run_script_button = QtWidgets.QPushButton(self.script)
         icon = QtGui.QIcon.fromTheme("text-x-script")
@@ -169,7 +195,9 @@ class Ui_MainWindow(object):
         self.line.setObjectName("line")
         self.verticalLayout_4.addWidget(self.line)
         self.script_output = QtWidgets.QGroupBox(self.script)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.script_output.sizePolicy().hasHeightForWidth())
@@ -211,7 +239,12 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.header_icon.setText(_translate("MainWindow", "<html><head/><body><p><img src=\":/resources/icon\" height=\"64\" width=\"64\" /></p></body></html>"))
+        self.header_icon.setText(
+            _translate(
+                "MainWindow",
+                '<html><head/><body><p><img src=":/resources/icon" height="64" width="64" /></p></body></html>',
+            )
+        )
         self.header_app_name.setText(_translate("MainWindow", "Workflow Manager v1.0"))
         self.source_browse_button.setText(_translate("MainWindow", "Browse"))
         self.source_label.setText(_translate("MainWindow", "Source"))
@@ -227,11 +260,14 @@ class Ui_MainWindow(object):
         self.actionMain.setText(_translate("MainWindow", "Main"))
         self.about_action.setText(_translate("MainWindow", "About"))
         self.actionCustom.setText(_translate("MainWindow", "Get more custom scripts..."))
+
+
 import resources_rc
 
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
